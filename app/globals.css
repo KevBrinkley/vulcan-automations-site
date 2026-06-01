@@ -7,10 +7,8 @@
   --nu-surface: #1a1a1a;
   --nu-surface-2: #141414;
   --nu-border: rgba(255, 255, 255, 0.1);
-  --nu-accent: #fcd34d;
-  --nu-accent-bright: #fde68a;
-  --nu-accent-dim: rgba(253, 224, 71, 0.4);
-  --nu-accent-glow: rgba(253, 224, 71, 0.28);
+  --nu-accent: #38bdf8;
+  --nu-accent-dim: rgba(56, 189, 248, 0.35);
   --nu-text: #e8e8e8;
   --nu-muted: #a1a1aa;
 }
@@ -35,7 +33,7 @@ body {
 }
 
 ::selection {
-  background: rgba(253, 224, 71, 0.32);
+  background: rgba(56, 189, 248, 0.25);
   color: #fff;
 }
 

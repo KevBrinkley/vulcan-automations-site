@@ -30,7 +30,7 @@ export type WhatsInsideItem = {
   image?: string;
   imageAlt?: string;
   description: string;
-  accent?: "gold" | "magenta" | "violet" | "green";
+  accent?: "sky" | "magenta" | "violet" | "green";
 };
 
 export type Module = {
@@ -60,7 +60,7 @@ export type Module = {
     label: string;
     title?: string;
     description?: string;
-    accent?: "gold" | "magenta" | "violet" | "green";
+    accent?: "sky" | "magenta" | "violet" | "green";
   }[];
 };
 
@@ -89,7 +89,7 @@ export const modules: Module[] = [
       {
         description:
           "Operating rhythm templates for weekly, monthly, and quarterly touchpoints so leadership always knows what gets reviewed and when.",
-        accent: "gold",
+        accent: "sky",
       },
       {
         description:
@@ -114,7 +114,7 @@ export const modules: Module[] = [
         title: "Document current state",
         description:
           "We map how work actually flows today: who owns it, what tools are involved, and where things stall. Nothing gets optimized until the baseline is honest and visible.",
-        accent: "gold",
+        accent: "sky",
       },
       {
         id: "2",
@@ -165,7 +165,7 @@ export const modules: Module[] = [
       {
         description:
           "A north-star metrics framework that separates signal from noise, so your dashboard answers one question: are we winning?",
-        accent: "gold",
+        accent: "sky",
       },
       {
         description:
@@ -184,7 +184,7 @@ export const modules: Module[] = [
       },
     ],
     diagram: [
-      { id: "1", label: "Revenue + pipeline health", accent: "gold" },
+      { id: "1", label: "Revenue + pipeline health", accent: "sky" },
       { id: "2", label: "Cash + runway signals", accent: "magenta" },
       { id: "3", label: "Delivery + capacity", accent: "violet" },
       { id: "4", label: "Risks + dependencies", accent: "green" },
@@ -213,7 +213,7 @@ export const modules: Module[] = [
       {
         description:
           "A level 0-4 maturity ladder so you know exactly where you are today and what to automate next.",
-        accent: "gold",
+        accent: "sky",
       },
       {
         description:
@@ -232,7 +232,7 @@ export const modules: Module[] = [
       },
     ],
     diagram: [
-      { id: "1", label: "Document + observe workflows", accent: "gold" },
+      { id: "1", label: "Document + observe workflows", accent: "sky" },
       { id: "2", label: "Pilot with narrow scope", accent: "magenta" },
       { id: "3", label: "Measure time saved + errors", accent: "violet" },
       { id: "4", label: "Scale what survives contact with reality", accent: "green" },
@@ -261,7 +261,7 @@ export const modules: Module[] = [
       {
         description:
           "A knowledge base structure trained on your FAQs, policies, and real workflows, not generic templates.",
-        accent: "gold",
+        accent: "sky",
       },
       {
         description:
@@ -280,7 +280,7 @@ export const modules: Module[] = [
       },
     ],
     diagram: [
-      { id: "1", label: "Map questions + escalation paths", accent: "gold" },
+      { id: "1", label: "Map questions + escalation paths", accent: "sky" },
       { id: "2", label: "Train on your knowledge base", accent: "magenta" },
       { id: "3", label: "Deploy with guardrails + testing", accent: "violet" },
       { id: "4", label: "Tune from live conversations", accent: "green" },

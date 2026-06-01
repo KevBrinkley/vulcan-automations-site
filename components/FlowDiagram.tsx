@@ -3,13 +3,13 @@ export type FlowStep = {
   label: string;
   title?: string;
   description?: string;
-  accent?: "gold" | "magenta" | "violet" | "green";
+  accent?: "sky" | "magenta" | "violet" | "green";
   image?: string;
   imageAlt?: string;
 };
 
 const accentRing: Record<string, string> = {
-  gold: "border-amber-300/75 shadow-[0_0_20px_rgba(253,224,71,0.38)]",
+  sky: "border-sky-400/60 shadow-[0_0_18px_rgba(56,189,248,0.25)]",
   magenta: "border-fuchsia-500/50 shadow-[0_0_18px_rgba(232,121,249,0.2)]",
   violet: "border-violet-400/50 shadow-[0_0_18px_rgba(167,139,250,0.2)]",
   green:
@@ -17,7 +17,7 @@ const accentRing: Record<string, string> = {
 };
 
 const stepLabelClass: Record<string, string> = {
-  gold: "text-amber-100/90",
+  sky: "text-sky-200/80",
   magenta: "text-fuchsia-200/80",
   violet: "text-violet-200/80",
   green: "text-emerald-300/90",
@@ -48,7 +48,7 @@ export function FlowDiagram({
         className={`grid gap-4 sm:grid-cols-2 lg:grid-cols-4 ${showFlowLabel ? "mt-6" : ""}`}
       >
         {steps.map((step) => {
-          const accent = step.accent ?? "gold";
+          const accent = step.accent ?? "sky";
           return (
             <div
               key={step.id}
@@ -70,7 +70,7 @@ export function FlowDiagram({
                 />
               )}
               <p
-                className={`font-mono text-sm ${stepLabelClass[accent] ?? stepLabelClass.gold}`}
+                className={`font-mono text-sm ${stepLabelClass[accent] ?? stepLabelClass.sky}`}
               >
                 Step {step.id}
               </p>
