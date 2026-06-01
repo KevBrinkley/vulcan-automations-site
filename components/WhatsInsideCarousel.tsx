@@ -7,7 +7,14 @@ const accentGradient: Record<string, string> = {
   gold: "from-amber-500/30 via-amber-950/40 to-[#141414]",
   magenta: "from-fuchsia-500/30 via-fuchsia-950/40 to-[#141414]",
   violet: "from-violet-500/30 via-violet-950/40 to-[#141414]",
-  amber: "from-amber-500/30 via-amber-950/40 to-[#141414]",
+  green: "from-emerald-500/30 via-emerald-950/40 to-[#141414]",
+};
+
+const activeDotClass: Record<string, string> = {
+  gold: "w-6 bg-amber-400 shadow-[0_0_12px_rgba(251,191,36,0.5)]",
+  magenta: "w-6 bg-fuchsia-400 shadow-[0_0_12px_rgba(232,121,249,0.45)]",
+  violet: "w-6 bg-violet-400 shadow-[0_0_12px_rgba(167,139,250,0.45)]",
+  green: "w-6 bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.5)]",
 };
 
 type Props = {
@@ -70,7 +77,8 @@ export function WhatsInsideCarousel({ items }: Props) {
               aria-current={i === index ? "true" : undefined}
               className={`h-2 rounded-full transition ${
                 i === index
-                  ? "w-6 bg-amber-400 shadow-[0_0_12px_rgba(251,191,36,0.5)]"
+                  ? (activeDotClass[items[i]?.accent ?? "gold"] ??
+                    activeDotClass.gold)
                   : "w-2 bg-white/20 hover:bg-white/40"
               }`}
             />

@@ -30,7 +30,7 @@ export type WhatsInsideItem = {
   image?: string;
   imageAlt?: string;
   description: string;
-  accent?: "gold" | "magenta" | "violet" | "amber";
+  accent?: "gold" | "magenta" | "violet" | "green";
 };
 
 export type Module = {
@@ -60,7 +60,7 @@ export type Module = {
     label: string;
     title?: string;
     description?: string;
-    accent?: "gold" | "magenta" | "violet" | "amber";
+    accent?: "gold" | "magenta" | "violet" | "green";
   }[];
 };
 
@@ -104,7 +104,7 @@ export const modules: Module[] = [
       {
         description:
           "Vendor and customer communication standards you can hand to any team member on day one.",
-        accent: "amber",
+        accent: "green",
       },
     ],
     diagram: [
@@ -138,7 +138,7 @@ export const modules: Module[] = [
         title: "Prioritize and begin work",
         description:
           "We rank opportunities by impact and effort, then ship what matters first. Every initiative gets a clear owner and a realistic timeline.",
-        accent: "amber",
+        accent: "green",
       },
     ],
   },
@@ -180,14 +180,14 @@ export const modules: Module[] = [
       {
         description:
           "A review cadence guide for what to check weekly versus monthly, built for owners who need clarity fast.",
-        accent: "amber",
+        accent: "green",
       },
     ],
     diagram: [
       { id: "1", label: "Revenue + pipeline health", accent: "gold" },
       { id: "2", label: "Cash + runway signals", accent: "magenta" },
       { id: "3", label: "Delivery + capacity", accent: "violet" },
-      { id: "4", label: "Risks + dependencies", accent: "amber" },
+      { id: "4", label: "Risks + dependencies", accent: "green" },
     ],
   },
   {
@@ -228,14 +228,14 @@ export const modules: Module[] = [
       {
         description:
           "Starter stack patterns sized for small business reality, not enterprise fantasy.",
-        accent: "amber",
+        accent: "green",
       },
     ],
     diagram: [
       { id: "1", label: "Document + observe workflows", accent: "gold" },
       { id: "2", label: "Pilot with narrow scope", accent: "magenta" },
       { id: "3", label: "Measure time saved + errors", accent: "violet" },
-      { id: "4", label: "Scale what survives contact with reality", accent: "amber" },
+      { id: "4", label: "Scale what survives contact with reality", accent: "green" },
     ],
   },
   {
@@ -276,14 +276,14 @@ export const modules: Module[] = [
       {
         description:
           "Conversation tuning guides built from real customer interactions, not one-size-fits-all scripts.",
-        accent: "amber",
+        accent: "green",
       },
     ],
     diagram: [
       { id: "1", label: "Map questions + escalation paths", accent: "gold" },
       { id: "2", label: "Train on your knowledge base", accent: "magenta" },
       { id: "3", label: "Deploy with guardrails + testing", accent: "violet" },
-      { id: "4", label: "Tune from live conversations", accent: "amber" },
+      { id: "4", label: "Tune from live conversations", accent: "green" },
     ],
   },
 ];

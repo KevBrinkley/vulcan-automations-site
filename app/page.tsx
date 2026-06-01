@@ -37,7 +37,7 @@ const ourProcessSteps = [
     title: "Build & Implement",
     description:
       "We ship the systems, automations, and dashboards agreed in the plan, not a slide deck. You get working solutions your team can run without us in the room every day.",
-    accent: "amber" as const,
+    accent: "green" as const,
   },
 ];
 
