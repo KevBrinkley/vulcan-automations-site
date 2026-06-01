@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --nu-bg: #121212;
+  --nu-bg-deep: #0d0d0d;
+  --nu-surface: #1a1a1a;
+  --nu-surface-2: #141414;
+  --nu-border: rgba(255, 255, 255, 0.1);
+  --nu-accent: #38bdf8;
+  --nu-accent-dim: rgba(56, 189, 248, 0.35);
+  --nu-text: #e8e8e8;
+  --nu-muted: #a1a1aa;
+}
+
+@theme inline {
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+  --font-display: var(--font-display), ui-serif, Georgia, serif;
+  /* Site minimum: nothing smaller than 14px (text-sm) */
+  --text-xs: 0.875rem;
+  --text-xs--line-height: 1.25rem;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--nu-bg);
+  color: var(--nu-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.25);
+  color: #fff;
+}
+
+.prose :where(p, li, blockquote, td, th, figcaption, code, small) {
+  font-size: 0.875rem;
+}
