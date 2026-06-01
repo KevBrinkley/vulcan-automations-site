@@ -1,4 +1,8 @@
 [build]
   command = "npm run build"
 
-# Next.js is detected automatically; API routes (/api/contact, /api/access-tool) run as serverless functions.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "20"
