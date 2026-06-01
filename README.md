@@ -72,14 +72,33 @@ Files are written to `public/downloads/*.pdf`. Replace them with your final bran
 
 ## Deploy
 
-**Vercel / Netlify / Cloudflare Pages:** import this repo; root directory is `.` (repo root). Framework: Next.js.
+Vercel often requires **Pro** for new team imports. **Netlify** (recommended) or **Cloudflare Pages** work on the free tier with this repo.
 
-Environment variables (production):
+### Netlify (recommended)
 
-- `HUBSPOT_ACCESS_TOKEN` (required)
-- `RESEND_API_KEY`, `CONTACT_TO_EMAIL`, `RESEND_FROM_EMAIL` (optional)
+1. Sign in at [app.netlify.com](https://app.netlify.com) with **GitHub** (`KevBrinkley`).
+2. **Add new site → Import an existing project** → choose **vulcan-automations-site**.
+3. Build settings (usually auto-detected):
+   - **Build command:** `npm run build`
+   - **Publish directory:** leave default for Next.js (Netlify sets this when using the Next runtime).
+4. **Site configuration → Environment variables** — add:
+   - `HUBSPOT_ACCESS_TOKEN` (required)
+   - `RESEND_API_KEY`, `CONTACT_TO_EMAIL`, `RESEND_FROM_EMAIL` (optional)
+5. Deploy. You get a `*.netlify.app` URL to test forms.
+6. **Domain management → Add domain** → `vulcanautomations.com` and `www.vulcanautomations.com`.
+7. At your registrar (or Cloudflare DNS), add the **DNS records Netlify shows** (often an A record + CNAME for `www`).
 
-Custom domain: `vulcanautomations.com` + `www` → point DNS at your host.
+No credit card required on the free starter plan for a marketing site like this.
+
+### Cloudflare Pages (good if DNS is already on Cloudflare)
+
+1. [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → Connect Git.
+2. Select **vulcan-automations-site**, framework **Next.js**, same env vars as above.
+3. Attach **vulcanautomations.com** in the Pages custom domain tab; DNS can stay in Cloudflare.
+
+### Vercel
+
+Only if you already have a working Hobby/Pro workspace. New signups often see **Pro only** — skip unless you want to pay.
 
 ## Content
 
