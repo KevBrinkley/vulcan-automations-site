@@ -5,9 +5,9 @@ export function ModuleCard({ module }: { module: Module }) {
   return (
     <Link
       href={getModuleHref(module)}
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-[#1a1a1a] to-[#141414] p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.04)] transition hover:border-amber-400/40 hover:shadow-[0_0_40px_rgba(251,191,36,0.12)]"
+      className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-[#1a1a1a] to-[#141414] p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.04)] transition hover:border-amber-300/40 hover:shadow-[0_0_40px_rgba(253,224,71,0.12)]"
     >
-      <span className="font-mono text-sm uppercase tracking-[0.25em] text-amber-400/90">
+      <span className="font-mono text-sm uppercase tracking-[0.25em] text-amber-300/90">
         {module.preHeader}
       </span>
       <h3 className="mt-3 font-[family-name:var(--font-display)] text-2xl font-semibold text-white group-hover:text-amber-100">

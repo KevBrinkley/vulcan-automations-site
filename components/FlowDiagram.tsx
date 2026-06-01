@@ -9,7 +9,7 @@ export type FlowStep = {
 };
 
 const accentRing: Record<string, string> = {
-  gold: "border-amber-400/60 shadow-[0_0_18px_rgba(251,191,36,0.25)]",
+  gold: "border-amber-300/75 shadow-[0_0_20px_rgba(253,224,71,0.38)]",
   magenta: "border-fuchsia-500/50 shadow-[0_0_18px_rgba(232,121,249,0.2)]",
   violet: "border-violet-400/50 shadow-[0_0_18px_rgba(167,139,250,0.2)]",
   green:
@@ -17,7 +17,7 @@ const accentRing: Record<string, string> = {
 };
 
 const stepLabelClass: Record<string, string> = {
-  gold: "text-amber-200/80",
+  gold: "text-amber-100/90",
   magenta: "text-fuchsia-200/80",
   violet: "text-violet-200/80",
   green: "text-emerald-300/90",

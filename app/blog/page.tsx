@@ -27,7 +27,7 @@ export default function BlogIndexPage() {
           <li key={p.slug}>
             <Link
               href={`/blog/${p.slug}`}
-              className="group block rounded-2xl border border-white/10 bg-[#141414] p-6 transition hover:border-amber-400/40"
+              className="group block rounded-2xl border border-white/10 bg-[#141414] p-6 transition hover:border-amber-300/40"
             >
               <p className="font-mono text-sm uppercase tracking-[0.2em] text-zinc-500">
                 {p.date}

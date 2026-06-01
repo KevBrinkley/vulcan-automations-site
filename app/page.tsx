@@ -52,17 +52,17 @@ export default function Home() {
           aria-hidden
           style={{
             background:
-              "radial-gradient(600px 400px at 20% 10%, rgba(251,191,36,0.2), transparent 60%), radial-gradient(500px 360px at 80% 0%, rgba(245,158,11,0.1), transparent 55%)",
+              "radial-gradient(600px 400px at 20% 10%, rgba(253,224,71,0.28), transparent 60%), radial-gradient(500px 360px at 80% 0%, rgba(252,211,77,0.14), transparent 55%)",
           }}
         />
         <div className="relative mx-auto max-w-6xl px-4 py-40 sm:px-6 sm:py-56">
-          <p className="font-mono text-sm uppercase tracking-[0.3em] text-amber-400/90">
+          <p className="font-mono text-sm uppercase tracking-[0.3em] text-amber-300/90">
             {site.name}
           </p>
           <h1 className="mt-4 max-w-3xl font-[family-name:var(--font-display)] text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
             Streamline operations for your business
           </h1>
-          <div className="mt-8 max-w-2xl border-l-2 border-amber-400/70 pl-5">
+          <div className="mt-8 max-w-2xl border-l-2 border-amber-300/70 pl-5">
             <p className="font-sans text-lg leading-relaxed text-zinc-300">
               Every business is different. We learn yours, then implement systems
               so that your business runs on its own. You can focus on being an
@@ -72,13 +72,13 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/contact"
-              className="rounded-full border border-amber-400/60 bg-amber-500/15 px-6 py-3 font-sans text-sm font-semibold text-amber-50 shadow-[0_0_30px_rgba(251,191,36,0.2)] transition hover:border-amber-300 hover:bg-amber-500/25"
+              className="rounded-full border border-amber-300/60 bg-amber-300/15 px-6 py-3 font-sans text-sm font-semibold text-amber-50 shadow-[0_0_30px_rgba(253,224,71,0.2)] transition hover:border-amber-300 hover:bg-amber-300/25"
             >
               Talk with us
             </Link>
             <Link
               href="/process"
-              className="rounded-full border border-white/15 bg-white/5 px-6 py-3 font-sans text-sm font-semibold text-zinc-100 transition hover:border-amber-400/40 hover:text-amber-100"
+              className="rounded-full border border-white/15 bg-white/5 px-6 py-3 font-sans text-sm font-semibold text-zinc-100 transition hover:border-amber-300/40 hover:text-amber-100"
             >
               Our services
             </Link>
@@ -169,7 +169,7 @@ export default function Home() {
               <Link
                 key={p.slug}
                 href={`/blog/${p.slug}`}
-                className="rounded-2xl border border-white/10 bg-[#141414] p-5 transition hover:border-amber-400/40"
+                className="rounded-2xl border border-white/10 bg-[#141414] p-5 transition hover:border-amber-300/40"
               >
                 <p className="font-mono text-sm uppercase tracking-[0.2em] text-zinc-500">
                   {p.date}
@@ -189,7 +189,7 @@ export default function Home() {
       <section className="border-y border-white/10 bg-[#101010]">
         <div className="mx-auto max-w-6xl px-4 py-32 sm:px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="font-mono text-sm uppercase tracking-[0.25em] text-amber-400">
+            <p className="font-mono text-sm uppercase tracking-[0.25em] text-amber-300">
               Contact
             </p>
             <h2 className="mt-3 font-[family-name:var(--font-display)] text-3xl font-semibold text-white">

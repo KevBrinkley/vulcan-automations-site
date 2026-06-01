@@ -24,18 +24,18 @@ export function SiteFooter() {
         </div>
         <Link
           href="/contact"
-          className="mt-8 rounded-full border border-amber-400/60 bg-amber-500/15 px-6 py-3 font-sans text-sm font-semibold text-amber-50 shadow-[0_0_30px_rgba(251,191,36,0.2)] transition hover:border-amber-300 hover:bg-amber-500/25"
+          className="mt-8 rounded-full border border-amber-300/60 bg-amber-300/15 px-6 py-3 font-sans text-sm font-semibold text-amber-50 shadow-[0_0_30px_rgba(253,224,71,0.2)] transition hover:border-amber-300 hover:bg-amber-300/25"
         >
           Talk with us
         </Link>
       </div>
       <div className="border-t border-white/5 py-6 text-center font-mono text-sm text-zinc-600">
         © {new Date().getFullYear()} {site.name} ·{" "}
-        <Link className="text-amber-500/80 hover:text-amber-300" href="/blog">
+        <Link className="text-amber-300/80 hover:text-amber-300" href="/blog">
           Blog
         </Link>{" "}
         ·{" "}
-        <Link className="text-amber-500/80 hover:text-amber-300" href="/contact">
+        <Link className="text-amber-300/80 hover:text-amber-300" href="/contact">
           Contact
         </Link>
       </div>

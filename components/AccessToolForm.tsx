@@ -52,10 +52,10 @@ export function AccessToolForm({ toolName, moduleSlug }: Props) {
   }
 
   const inputClass =
-    "w-full rounded-xl border border-amber-400/40 bg-black/25 px-3 py-2 font-sans text-sm text-amber-50 placeholder:text-amber-100/50 outline-none backdrop-blur-sm transition focus:border-amber-300/70 focus:bg-black/35 focus:ring-2 focus:ring-amber-300/25";
+    "w-full rounded-xl border border-amber-300/40 bg-black/25 px-3 py-2 font-sans text-sm text-amber-50 placeholder:text-amber-100/50 outline-none backdrop-blur-sm transition focus:border-amber-300/70 focus:bg-black/35 focus:ring-2 focus:ring-amber-300/25";
 
   const buttonClass =
-    "w-full rounded-xl border border-amber-300/60 bg-amber-500/35 px-4 py-2.5 font-sans text-sm font-semibold text-amber-50 shadow-[0_0_24px_rgba(251,191,36,0.25)] transition hover:border-amber-200 hover:bg-amber-400/45 disabled:opacity-60 sm:w-auto";
+    "w-full rounded-xl border border-amber-300/60 bg-amber-300/35 px-4 py-2.5 font-sans text-sm font-semibold text-amber-50 shadow-[0_0_24px_rgba(253,224,71,0.25)] transition hover:border-amber-200 hover:bg-amber-300/45 disabled:opacity-60 sm:w-auto";
 
   return (
     <form onSubmit={onSubmit} className="space-y-3">

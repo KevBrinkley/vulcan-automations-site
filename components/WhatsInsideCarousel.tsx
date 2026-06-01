@@ -4,14 +4,14 @@ import { useState } from "react";
 import type { WhatsInsideItem } from "@/lib/modules";
 
 const accentGradient: Record<string, string> = {
-  gold: "from-amber-500/30 via-amber-950/40 to-[#141414]",
+  gold: "from-amber-300/40 via-amber-950/40 to-[#141414]",
   magenta: "from-fuchsia-500/30 via-fuchsia-950/40 to-[#141414]",
   violet: "from-violet-500/30 via-violet-950/40 to-[#141414]",
   green: "from-emerald-500/30 via-emerald-950/40 to-[#141414]",
 };
 
 const activeDotClass: Record<string, string> = {
-  gold: "w-6 bg-amber-400 shadow-[0_0_12px_rgba(251,191,36,0.5)]",
+  gold: "w-6 bg-amber-300 shadow-[0_0_12px_rgba(253,224,71,0.5)]",
   magenta: "w-6 bg-fuchsia-400 shadow-[0_0_12px_rgba(232,121,249,0.45)]",
   violet: "w-6 bg-violet-400 shadow-[0_0_12px_rgba(167,139,250,0.45)]",
   green: "w-6 bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.5)]",
@@ -62,7 +62,7 @@ export function WhatsInsideCarousel({ items }: Props) {
           type="button"
           onClick={() => goTo(index - 1)}
           aria-label="Previous slide"
-          className="rounded-full border border-white/15 bg-white/5 px-4 py-2 font-mono text-xs text-zinc-200 transition hover:border-amber-400/40 hover:text-amber-100"
+          className="rounded-full border border-white/15 bg-white/5 px-4 py-2 font-mono text-xs text-zinc-200 transition hover:border-amber-300/40 hover:text-amber-100"
         >
           ← Prev
         </button>
@@ -89,7 +89,7 @@ export function WhatsInsideCarousel({ items }: Props) {
           type="button"
           onClick={() => goTo(index + 1)}
           aria-label="Next slide"
-          className="rounded-full border border-white/15 bg-white/5 px-4 py-2 font-mono text-xs text-zinc-200 transition hover:border-amber-400/40 hover:text-amber-100"
+          className="rounded-full border border-white/15 bg-white/5 px-4 py-2 font-mono text-xs text-zinc-200 transition hover:border-amber-300/40 hover:text-amber-100"
         >
           Next →
         </button>
