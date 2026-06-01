@@ -3,13 +3,13 @@ export type FlowStep = {
   label: string;
   title?: string;
   description?: string;
-  accent?: "sky" | "magenta" | "violet" | "amber";
+  accent?: "gold" | "magenta" | "violet" | "amber";
   image?: string;
   imageAlt?: string;
 };
 
 const accentRing: Record<string, string> = {
-  sky: "border-sky-400/60 shadow-[0_0_18px_rgba(56,189,248,0.25)]",
+  gold: "border-amber-400/60 shadow-[0_0_18px_rgba(251,191,36,0.25)]",
   magenta: "border-fuchsia-500/50 shadow-[0_0_18px_rgba(232,121,249,0.2)]",
   violet: "border-violet-400/50 shadow-[0_0_18px_rgba(167,139,250,0.2)]",
   amber: "border-amber-400/50 shadow-[0_0_18px_rgba(251,191,36,0.18)]",
@@ -42,7 +42,7 @@ export function FlowDiagram({
         {steps.map((step) => (
           <div
             key={step.id}
-            className={`rounded-xl border bg-[#101010] p-4 ${accentRing[step.accent ?? "sky"]} ${isDetailed ? "p-5" : ""}`}
+            className={`rounded-xl border bg-[#101010] p-4 ${accentRing[step.accent ?? "gold"]} ${isDetailed ? "p-5" : ""}`}
           >
             {step.image ? (
               <div className="relative mb-4 aspect-video overflow-hidden rounded-lg border border-white/10">
@@ -59,7 +59,7 @@ export function FlowDiagram({
                 aria-hidden
               />
             )}
-            <p className="font-mono text-sm text-sky-200/80">Step {step.id}</p>
+            <p className="font-mono text-sm text-amber-200/80">Step {step.id}</p>
             <h3 className="mt-2 font-[family-name:var(--font-display)] text-lg font-semibold leading-snug text-white">
               {step.title ?? step.label}
             </h3>

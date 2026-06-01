@@ -27,12 +27,12 @@ export default function BlogIndexPage() {
           <li key={p.slug}>
             <Link
               href={`/blog/${p.slug}`}
-              className="group block rounded-2xl border border-white/10 bg-[#141414] p-6 transition hover:border-sky-400/40"
+              className="group block rounded-2xl border border-white/10 bg-[#141414] p-6 transition hover:border-amber-400/40"
             >
               <p className="font-mono text-sm uppercase tracking-[0.2em] text-zinc-500">
                 {p.date}
               </p>
-              <h2 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-semibold text-white group-hover:text-sky-100">
+              <h2 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-semibold text-white group-hover:text-amber-100">
                 {p.title}
               </h2>
               <p className="mt-2 font-sans text-sm text-zinc-400">

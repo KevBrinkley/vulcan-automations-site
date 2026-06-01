@@ -18,7 +18,7 @@ export function SiteHeader() {
           <span className="font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight text-white sm:text-xl">
             {site.name}
           </span>
-          <span className="font-mono text-sm uppercase tracking-[0.2em] text-sky-400/90">
+          <span className="font-mono text-sm uppercase tracking-[0.2em] text-amber-400/90">
             {site.taglineShort}
           </span>
         </Link>
@@ -27,7 +27,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-full px-3 py-1.5 font-sans text-sm text-zinc-300 transition hover:bg-white/5 hover:text-sky-300"
+              className="rounded-full px-3 py-1.5 font-sans text-sm text-zinc-300 transition hover:bg-white/5 hover:text-amber-300"
             >
               {item.label}
             </Link>
@@ -35,7 +35,7 @@ export function SiteHeader() {
         </nav>
         <Link
           href="/contact"
-          className="rounded-full border border-sky-400/50 bg-sky-500/10 px-4 py-2 font-sans text-sm font-medium text-sky-200 shadow-[0_0_20px_rgba(56,189,248,0.15)] transition hover:border-sky-300 hover:bg-sky-500/20"
+          className="rounded-full border border-amber-400/50 bg-amber-500/10 px-4 py-2 font-sans text-sm font-medium text-amber-200 shadow-[0_0_20px_rgba(251,191,36,0.15)] transition hover:border-amber-300 hover:bg-amber-500/20"
         >
           Talk with us
         </Link>

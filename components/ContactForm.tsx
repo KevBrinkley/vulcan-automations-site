@@ -49,7 +49,7 @@ export function ContactForm({ variant = "full" }: Props) {
   }
 
   const inputClass =
-    "w-full rounded-xl border border-white/10 bg-[#0f0f0f] px-3 py-2 font-sans text-sm text-zinc-100 outline-none ring-sky-400/0 transition focus:border-sky-400/60 focus:ring-2 focus:ring-sky-400/30";
+    "w-full rounded-xl border border-white/10 bg-[#0f0f0f] px-3 py-2 font-sans text-sm text-zinc-100 outline-none ring-amber-400/0 transition focus:border-amber-400/60 focus:ring-2 focus:ring-amber-400/30";
 
   const messagePlaceholder =
     variant === "compact"
@@ -106,13 +106,13 @@ export function ContactForm({ variant = "full" }: Props) {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full rounded-xl border border-sky-400/50 bg-gradient-to-r from-sky-500/20 to-blue-500/10 px-4 py-2.5 font-sans text-sm font-semibold text-sky-50 shadow-[0_0_24px_rgba(56,189,248,0.18)] transition hover:border-sky-300 disabled:opacity-60 sm:w-auto"
+        className="w-full rounded-xl border border-amber-400/50 bg-gradient-to-r from-amber-500/20 to-amber-600/10 px-4 py-2.5 font-sans text-sm font-semibold text-amber-50 shadow-[0_0_24px_rgba(251,191,36,0.18)] transition hover:border-amber-300 disabled:opacity-60 sm:w-auto"
       >
         {status === "loading" ? "Sending…" : "Send message"}
       </button>
       {message && (
         <p
-          className={`font-mono text-xs ${status === "success" ? "text-sky-300" : "text-rose-300"}`}
+          className={`font-mono text-xs ${status === "success" ? "text-amber-300" : "text-rose-300"}`}
         >
           {message}
         </p>
