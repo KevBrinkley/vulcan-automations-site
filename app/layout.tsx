@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, Fraunces, JetBrains_Mono } from "next/font/google";
+import { NetlifyIdentity } from "@/components/NetlifyIdentity";
 import { Shell } from "@/components/Shell";
 import { site } from "@/lib/site";
 import "./globals.css";
@@ -48,6 +49,7 @@ export default function RootLayout({
         className={`${display.variable} ${sans.variable} ${mono.variable} flex min-h-full flex-col bg-[#121212] text-zinc-100 antialiased`}
       >
         <Shell>{children}</Shell>
+        <NetlifyIdentity />
       </body>
     </html>
   );
