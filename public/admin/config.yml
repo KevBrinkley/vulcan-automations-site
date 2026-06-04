@@ -1,7 +1,7 @@
+# Production (Netlify): git-gateway + Identity + Git Gateway in dashboard.
 # Local UI preview only: set backend.name to test-repo (no saves).
 backend:
-  name: github
-  repo: KevBrinkley/vulcan-automations-site
+  name: git-gateway
   branch: main
 
 media_folder: "public/images"

@@ -124,15 +124,17 @@ backend:
   name: test-repo
 ```
 
-Switch back to `github` and `repo: KevBrinkley/vulcan-automations-site` before using it for real.
+Switch back to `git-gateway` before using it for real.
 
 ### Netlify (required for live editing)
 
-Decap commits to GitHub; Netlify redeploys on push.
+Decap commits to GitHub via **Git Gateway**; Netlify redeploys on push. Log in with your **Netlify Identity** invite (email/password) — not GitHub OAuth.
 
 1. **Site configuration → Identity** → Enable.
 2. **Identity → Registration** → Invite only (recommended).
-3. **Identity → Services → Git Gateway** → Enable (repo `KevBrinkley/vulcan-automations-site`, branch `main`).
-4. Invite your user, sign up at `/admin`, publish posts.
+3. **Identity → Services → Git Gateway** → Enable, then connect to GitHub (`KevBrinkley/vulcan-automations-site`).
+4. If auth fails later: **Git Gateway → Edit settings → Regenerate access token**.
+5. **Identity → Invite users** → send yourself an invite.
+6. Open `/admin`, accept invite, sign up, log in with Identity credentials.
 
 Image uploads go to `public/images` and are served at `/images/...`.
