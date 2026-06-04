@@ -27,12 +27,14 @@ type Props = {
   steps: FlowStep[];
   flowLabel?: string;
   className?: string;
+  centerText?: boolean;
 };
 
 export function FlowDiagram({
   steps,
   flowLabel = "Flow",
   className = "",
+  centerText = false,
 }: Props) {
   const isDetailed = steps.some((step) => step.description);
   const showFlowLabel = flowLabel.length > 0;
@@ -52,15 +54,15 @@ export function FlowDiagram({
           return (
             <div
               key={step.id}
-              className={`rounded-xl border bg-[#101010] p-4 ${accentRing[accent]} ${isDetailed ? "p-5" : ""}`}
+              className={`rounded-xl border bg-[#101010] p-4 ${accentRing[accent]} ${isDetailed ? "p-5" : ""} ${centerText ? "text-center" : ""}`}
             >
               {step.image ? (
-                <div className="relative mb-4 aspect-video overflow-hidden rounded-lg border border-white/10">
+                <div className="relative mb-4 flex aspect-video items-center justify-center overflow-hidden rounded-lg border border-white/10 bg-black p-4">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={step.image}
                     alt={step.imageAlt ?? step.title ?? step.label}
-                    className="h-full w-full object-cover"
+                    className="max-h-full max-w-full object-contain"
                   />
                 </div>
               ) : (

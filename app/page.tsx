@@ -14,6 +14,8 @@ const ourProcessSteps = [
     description:
       "We map how work actually flows today: who owns it, what tools are involved, and where things stall. Nothing gets optimized until the baseline is honest and visible.",
     accent: "sky" as const,
+    image: "/images/process/vision.png",
+    imageAlt: "Person observing operations with a telescope and analytics",
   },
   {
     id: "2",
@@ -22,6 +24,8 @@ const ourProcessSteps = [
     description:
       "We bring proven patterns from similar businesses so you are not reinventing the wheel. You see what good looks like before committing time or budget to change.",
     accent: "magenta" as const,
+    image: "/images/process/team.png",
+    imageAlt: "Team handshake representing collaboration and shared practices",
   },
   {
     id: "3",
@@ -30,6 +34,8 @@ const ourProcessSteps = [
     description:
       "We rank opportunities by impact, effort, and fit for your team. Every initiative gets a clear owner and a realistic timeline before anything gets built.",
     accent: "violet" as const,
+    image: "/images/process/prioritize.png",
+    imageAlt: "Monitor displaying charts for prioritization and assignment",
   },
   {
     id: "4",
@@ -38,6 +44,8 @@ const ourProcessSteps = [
     description:
       "We ship the systems, automations, and dashboards agreed in the plan, not a slide deck. You get working solutions your team can run without us in the room every day.",
     accent: "green" as const,
+    image: "/images/process/build.png",
+    imageAlt: "Workflow from gear to completed checkmark representing implementation",
   },
 ];
 
@@ -110,11 +118,12 @@ export default function Home() {
           <h2 className="mt-2 font-[family-name:var(--font-display)] text-3xl font-semibold text-white sm:text-4xl">
             Industries We Support
           </h2>
-          <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 lg:grid-cols-5">
+          <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 lg:grid-cols-6">
             {[
               "Home Services",
               "Healthcare",
-              "Legal & Accounting",
+              "Legal",
+              "Financial",
               "Technology",
               "Hospitality",
             ].map((industry) => (
@@ -137,7 +146,7 @@ export default function Home() {
           <h2 className="mt-2 font-[family-name:var(--font-display)] text-3xl font-semibold text-white sm:text-4xl">
             Our Process
           </h2>
-          <FlowDiagram steps={ourProcessSteps} flowLabel="" className="mt-8" />
+          <FlowDiagram steps={ourProcessSteps} flowLabel="" className="mt-8" centerText />
         </div>
       </section>
 
