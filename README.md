@@ -104,4 +104,35 @@ Only if you already have a working Hobby/Pro workspace. New signups often see **
 
 - **Modules (cards + detail pages):** copy and structure in `lib/modules.ts` (`preHeader`, `headline`, summary, PDF path).
 - **40 skills list:** `lib/skills-40.ts`.
-- **Blog posts:** add `content/blog/<slug>.md` with frontmatter `title`, `date`, `description`.
+- **Blog posts:** add `content/blog/<slug>.md` with frontmatter `title`, `date`, `description`, or use **Decap CMS** at `/admin` (see below).
+
+## Blog admin (Decap CMS)
+
+Edit posts in the browser at **`/admin`** (e.g. [vulcanautomations.com/admin](https://vulcanautomations.com/admin) after deploy).
+
+### Local preview
+
+```bash
+npm run dev
+# Open http://localhost:3000/admin
+```
+
+To preview the admin UI without GitHub auth, temporarily set in `public/admin/config.yml`:
+
+```yaml
+backend:
+  name: test-repo
+```
+
+Switch back to `github` and `repo: KevBrinkley/vulcan-automations-site` before using it for real.
+
+### Netlify (required for live editing)
+
+Decap commits to GitHub; Netlify redeploys on push.
+
+1. **Site configuration → Identity** → Enable.
+2. **Identity → Registration** → Invite only (recommended).
+3. **Identity → Services → Git Gateway** → Enable (repo `KevBrinkley/vulcan-automations-site`, branch `main`).
+4. Invite your user, sign up at `/admin`, publish posts.
+
+Image uploads go to `public/images` and are served at `/images/...`.

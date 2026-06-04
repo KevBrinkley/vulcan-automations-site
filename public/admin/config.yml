@@ -1,0 +1,22 @@
+# Local UI preview only: set backend.name to test-repo (no saves).
+backend:
+  name: github
+  repo: KevBrinkley/vulcan-automations-site
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Body, name: body, widget: markdown }
